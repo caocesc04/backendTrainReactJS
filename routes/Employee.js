@@ -45,6 +45,7 @@ router.post('/EmployeeCreate', function (req, res, next) {
 });
 
 router.get('/GetAllEmployee', function (req, res, next) {
+    console.log('a')
     sql.connect(config, function (err) {
         //------------------------------
         var request = new sql.Request();
